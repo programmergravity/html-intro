@@ -2,35 +2,150 @@
 <html>
 <head>
     <title>My personal CV</title>
+    <style>
+        .titles{
+            background-color: black;
+            color:white
+        }
+        th{
+            text-align: center;
+            font-style:oblique;
+            color: black;
+        }
+        body{
+            text-align: center;
+        }
+        table, th, td{
+            border: 1px solid black;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+            
+            padding-left: 60px;
+            padding-right: 40px;
+            padding-top: 10px;
+            padding-bottom: 20px
+        }
+        p{
+            font-style:initial
+        }
+    </style>
 </head>
 <body>
-    <h2>I. General information</h2>
+    <h2 class="titles">I. General information</h2>
+        <br>
         <p>Name: Kevin Andres</p>
         <p>Last name: Bolaños Narvaez</p>
         <p>Email: programmerslowgravity@gmail.com</p>
         <p>Number phone: 3122119055</p>
         <p>Ubication: Candelaria</p>
-        <a target="_blank" href="https://github.com/programmergravity?tab=repositories">Workspace Github</a>
+        <a target="_blank" href="https://github.com/programmergravity?tab=repositories">My workspace Github</a>
         <div>
         <br>
         <a target="_blank" href="https://www.linkedin.com/in/kevin-bola%C3%B1os-05b881272/">My personal Linkedln</a>
         </div>
-        <hr>    
-        <h2>II. Proffesional experiencie</h2>
-        <ul>
-            <li>Empresa: Supermercado ahorra más, cali, Colombia</li>
-            <li>Cargo: Domiciliario, Empacador</li>
-            <li>Empresa: Restaurante la vaca sabrosa, Cali, Colombia</li>
-            <li>Cargo: Domiciliario, atención al cliente</li>
-        </ul>
+        <br><br>
+        
         <hr>
-    <h2>III. Technical and technology skills</h2>
-        <hr>
-    <h2>IV. technological interests</h2>
 
+        <h2 class="titles">II. Proffesional experiencie</h2>
+        <ol>
+            <li>Actualmente no cuento con experiencia como programador web</li>
+            <li>Planeo adquirir experiencia durante todo este proceso de desarrollo, tanto en lo tecnologico como en lo personal</li>
+        </ol>
+        <br><br>
+
+        <hr>
+    <h2 class="titles">III. Technical and technology skills</h2>
+
+    <table>
+        <tr>
+            <th class="titles" colspan="2">Technology skills that i know use</th>
+        </tr>
+        <tr>
+            <th>1.html</th>
+            <td>En proceso de aprendizaje, en mi conocimiento actual se cómo va la estructura básica para crear una página web con html, como crear textos, párrafos, agregar hipervínculos, imágenes y crear una tabla basica</td>
+            </tr>
+        <tr>
+            <th>2.git</th>
+            <td>En mi conocimiento cuento con habilidades como: inicializar un repositorio local con "git init", como clonar un repositorio remoto de github al local de git "git clone", crear ramas "branch", como preparar un nuevo cambio para actualizar "git add", y también agregar estos cambios al repositorio local "git -m commit"</td>
+        </tr>
+        <tr>
+            <th>3.github</th>
+            <td>Cuento con habilidades para subir un repositorio local de git al remoto de github "git push", como extraer los cambios del remoto al local "git pull", en como hacer cambios colaborativos a repositorios terceros "pull request"</td>
+        </tr>
+        <tr>
+            <th>4.css</th>
+            <td>En proceso de aprendizaje, teoria basica sobre lo que es css y algunas etiquetas como "style" para personalizar y darle color a textos y 
+            fondos.</td>     
+    </table>
+    <br>
+
+    <table>
+        <th class="titles" colspan="2">Technology that interest me learning</th>
+        <tr>
+            <th>1.</th>
+            <td>Javascript</td>
+        </tr>
+        <tr>
+            <th>2.</th>
+            <td>Php</td>
+        </tr>
+        <tr>
+            <th>3.</th>
+            <td>MySql</td>
+        </tr>
+        <tr>
+            <th>4.</th>
+            <td>MongoDb</td>
+        </tr>
+        <tr>
+            <th>5.</th>
+            <td>Python</td>
+        </tr>
+        <tr>
+            <th>6.</th>
+            <td>Java</td>
+        </tr>
+        <tr>
+            <th>7.</th>
+            <td>Frameworks como Angular y React</td>
+        </tr>
+    </table>
+    <br><br>
+    <hr>
+    <h2 class="titles">IV. Technological interests</h2>
+    <table style=width:500;>
+        <tr>
+            <th class="titles" colspan="2">Posicion</th>
+        </tr>
+        <tr>
+            <th>1.</th>
+            <td>Programacion web full stack</td>
+        </tr>
+        <tr>
+            <th>2.</th>
+            <td>Desarrollo en machine learning</td>
+        </tr>
+        <tr>
+            <th>3.</th>
+            <td> Desarrollo en ciberseguridad</td>
+        </tr>
+        <tr>
+            <th>4.</th>
+            <td>Desarrollo movil</td>
+        </tr>
+        <tr>
+            <th>5.</th>
+            <td>Programacion de videojuegos</td>
+        </tr>
+    </table>
+    <br><br>
+    <hr>
     <form>
         <form><label for="nombre">nombre</label>
-        <input id="nombre">
+        <input type="email" id="nombre">
     </form>
 </body>
 </html>
