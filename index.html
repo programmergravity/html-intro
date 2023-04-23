@@ -3,6 +3,9 @@
 <head>
     <title>My personal CV</title>
     <style>
+        textarea{
+            resize: none;
+        }
         .titles{
             background-color: black;
             color:white
@@ -27,9 +30,6 @@
             padding-top: 10px;
             padding-bottom: 20px
         }
-        p{
-            font-style:initial
-        }
     </style>
 </head>
 <body>
@@ -51,8 +51,10 @@
 
         <h2 class="titles">II. Proffesional experiencie</h2>
         <ol>
-            <li>Actualmente no cuento con experiencia como programador web</li>
-            <li>Planeo adquirir experiencia durante todo este proceso de desarrollo, tanto en lo tecnologico como en lo personal</li>
+            <li style="text-align: left;">Currently i don`t have experience how programmer web</li>
+            <li style="text-align: left;">I am in an educational training process, sponsored by "Protalento" and "Escuela Ada" to
+                give me the right knowledge to get out of the job market as an excellent web developer, entering in the technology world.</li>
+            <li style="text-align: left;">I am planning to gain experience along the way and the whole process in the world of programming, and also to grow day by day in this technological world and the grow personally level.</li>
         </ol>
         <br><br>
 
@@ -65,20 +67,19 @@
         </tr>
         <tr>
             <th>1.html</th>
-            <td>En proceso de aprendizaje, en mi conocimiento actual se cómo va la estructura básica para crear una página web con html, como crear textos, párrafos, agregar hipervínculos, imágenes y crear una tabla basica</td>
+            <td>In the process of learning, in my current knowledge I know how the basic structure to create a web page with html goes, how to create texts, paragraphs, add hyperlinks, images and create a basic table.</td>
             </tr>
         <tr>
             <th>2.git</th>
-            <td>En mi conocimiento cuento con habilidades como: inicializar un repositorio local con "git init", como clonar un repositorio remoto de github al local de git "git clone", crear ramas "branch", como preparar un nuevo cambio para actualizar "git add", y también agregar estos cambios al repositorio local "git -m commit"</td>
+            <td>To my knowledge I have skills such as: initializing a local repository with "git init", how to clone a remote github repository to local git "git clone", creating branches "branch", how to prepare a new change to update "git add ", and also add these changes to the local repository "git -m commit".</td>
         </tr>
         <tr>
             <th>3.github</th>
-            <td>Cuento con habilidades para subir un repositorio local de git al remoto de github "git push", como extraer los cambios del remoto al local "git pull", en como hacer cambios colaborativos a repositorios terceros "pull request"</td>
+            <td>I have the skills to push a local git repository to a remote github "git push", how to pull changes from the remote to the local "git pull", how to make collaborative changes to third-party repositories "pull request".</td>
         </tr>
         <tr>
             <th>4.css</th>
-            <td>En proceso de aprendizaje, teoria basica sobre lo que es css y algunas etiquetas como "style" para personalizar y darle color a textos y 
-            fondos.</td>     
+            <td>In the process of learning, basic theory about what css is and some tags like "style" to customize and give color to texts and backgrounds.</td>     
     </table>
     <br>
 
@@ -110,7 +111,7 @@
         </tr>
         <tr>
             <th>7.</th>
-            <td>Frameworks como Angular y React</td>
+            <td>Frameworks how Angular and React</td>
         </tr>
     </table>
     <br><br>
@@ -118,34 +119,49 @@
     <h2 class="titles">IV. Technological interests</h2>
     <table style=width:500;>
         <tr>
-            <th class="titles" colspan="2">Posicion</th>
+            <th class="titles" colspan="2">Position</th>
         </tr>
         <tr>
             <th>1.</th>
-            <td>Programacion web full stack</td>
+            <td>Full stack web programming</td>
         </tr>
         <tr>
             <th>2.</th>
-            <td>Desarrollo en machine learning</td>
+            <td>Machine learning developer</td>
         </tr>
         <tr>
             <th>3.</th>
-            <td> Desarrollo en ciberseguridad</td>
+            <td>Cybersegurity developer</td>
         </tr>
         <tr>
             <th>4.</th>
-            <td>Desarrollo movil</td>
+            <td>Mobile developer</td>
         </tr>
         <tr>
             <th>5.</th>
-            <td>Programacion de videojuegos</td>
+            <td>videogames developer</td>
         </tr>
     </table>
     <br><br>
     <hr>
     <form>
-        <form><label for="nombre">nombre</label>
-        <input type="email" id="nombre">
+        <label for="iname">Firstname</label>
+        <input type="iname" type="text" name="name">
+        <br>
+        <br>
+        <label for="isurname">Lastname</label>
+        <input id="isurname" type="text" name="surname">
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <input id="iemail" type="email" name="email">
+        <br>
+        <br>
+        <button type="button">Contactar</button>
+        <br>
+        <br>
     </form>
+        <label for="comentarios">Comment</label>
+        <textarea name="comentarios" rows="6" cols="40"></textarea>
 </body>
 </html>
