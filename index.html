@@ -1,132 +1,131 @@
 <!DOCTYPE html>
 <html>
+  
 <head>
-    <title>MY PERSONAL CV</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>PERSONAL CV</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="padre-flex">
 
-    <header>
-        <h1>MY PERSONAL CV
-            KEVIN ANDRES BOLAÑOS NARVAEZ
-        </h1>
-    </header>
-
-    <h2 class="titles">I. General information</h2>
-        <p>Email: programmerslowgravity@gmail.com</p>
-        <p>Number phone: 3122119055</p>
-        <p>Ubication: Candelaria</p>
-        <a target="_blank" href="https://github.com/programmergravity?tab=repositories">My workspace Github</a>
-        <a target="_blank" href="https://www.linkedin.com/in/kevin-bola%C3%B1os-05b881272/">My personal Linkedln</a>
-        
-    <h2 class="titles">II. Proffesional experiencie</h2>
-        <ol>
-            <li style="text-align: left;">Currently i don`t have experience how programmer web</li>
-            <li style="text-align: left;">I am in an educational training process, sponsored by "Protalento" and "Escuela Ada" to
-            give me the right knowledge to get out of the job market as an excellent web developer, entering in the technology world.</li>
-            <li style="text-align: left;">I am planning to gain experience along the way and the whole process in the world of programming, and also to grow day by day in this technological world and the grow personally level.</li>
-        </ol>
-
-    <h2 class="titles">III. Technical and technology skills</h2>
-
-    <table>
-        <tr>
-            <th class="titles" colspan="2">Technology skills that i know use</th>
-        </tr>
-        <tr>
-            <th>1.html</th>
-            <td>In the process of learning, in my current knowledge I know how the basic structure to create a web page with html goes, how to create texts, paragraphs, add hyperlinks, images and create a basic table.</td>
-            </tr>
-        <tr>
-            <th>2.git</th>
-            <td>To my knowledge I have skills such as: initializing a local repository with "git init", how to clone a remote github repository to local git "git clone", creating branches "branch", how to prepare a new change to update "git add ", and also add these changes to the local repository "git -m commit".</td>
-        </tr>
-        <tr>
-            <th>3.github</th>
-            <td>I have the skills to push a local git repository to a remote github "git push", how to pull changes from the remote to the local "git pull", how to make collaborative changes to third-party repositories "pull request".</td>
-        </tr>
-        <tr>
-            <th>4.css</th>
-            <td>In the process of learning, basic theory about what css is and some tags like "style" to customize and give color to texts and backgrounds.</td>     
-    </table>
-    <br>
-
-    <table>
-        <th class="titles" colspan="2">Technology that interest me learning</th>
-        <tr>
-            <th>1.</th>
-            <td>Javascript</td>
-        </tr>
-        <tr>
-            <th>2.</th>
-            <td>Php</td>
-        </tr>
-        <tr>
-            <th>3.</th>
-            <td>MySql</td>
-        </tr>
-        <tr>
-            <th>4.</th>
-            <td>MongoDb</td>
-        </tr>
-        <tr>
-            <th>5.</th>
-            <td>Python</td>
-        </tr>
-        <tr>
-            <th>6.</th>
-            <td>Java</td>
-        </tr>
-        <tr>
-            <th>7.</th>
-            <td>Frameworks how Angular and React</td>
-        </tr>
-    </table>
-    <h2 class="titles">IV. Technological interests</h2>
-    <table>
-        <tr>
-            <th class="titles" colspan="2">Position</th>
-        </tr>
-        <tr>
-            <th>1.</th>
-            <td>Full stack web programming</td>
-        </tr>
-        <tr>
-            <th>2.</th>
-            <td>Machine learning developer</td>
-        </tr>
-        <tr>
-            <th>3.</th>
-            <td>Cybersegurity developer</td>
-        </tr>
-        <tr>
-            <th>4.</th>
-            <td>Mobile developer</td>
-        </tr>
-        <tr>
-            <th>5.</th>
-            <td>videogames developer</td>
-        </tr>
-    </table>
-
-    <form>
-        <label for="iname">Firstname</label>
-        <input type="iname" type="text" name="name">
-        <br>
-        <br>
-        <label for="isurname">Lastname</label>
-        <input id="isurname" type="text" name="surname">
-        <br>
-        <br>
-        <label for="email">Email</label>
-        <input id="iemail" type="email" name="email">
-        <br>
-        <br>
-        <button type="button">Contactar</button>
-        <br>
-        <br>
-    </form>
-        <label for="comentarios">Comment</label>
-        <textarea name="comentarios" rows="6" cols="40"></textarea>
+        <section class="seccion-izquierda">
+            <picture class="photo-profile">
+                <img src="images/yo.png" alt="">
+            </picture>
+            <article class="caja-habilidades">
+                <h2 class="title-tecnologias">Habilidades</h2>
+                <small>Meses de experiencia</small>
+                <div class="barra-header">
+                    <span class="skills-start-level">0</span>
+                    <span class="skills-start-level">2</span>
+                </div>
+                <div class="barra">
+                    <div class="barra-items">
+                    <p class="barra-js">HTML</p>
+                    <div class="barra-skill barra-skill--60"></div>
+                </div>
+                <div class="barra">
+                    <div class="barra-items">
+                    <p class="barra-js">CSS</p>
+                    <div class="barra-skill barra-skill--30"></div>
+                </div>
+                <div class="barra">
+                    <div class="barra-items">
+                    <p class="barra-js">GIT</p>
+                    <div class="barra-skill barra-skill--70"></div>
+                </div>
+                <div class="barra">
+                    <div class="barra-items">
+                    <p class="barra-js">GITHUB</p>
+                    <div class="barra-skill barra-skill--80"></div>
+                </div>
+                <div class="barra">
+                    <div class="barra-items">
+                    <p class="barra-js">JAVASCRIPT</p>
+                    <div class="barra-skill barra-skill--10"></div>
+                </div>
+            </article>
+            <article class="caja-intereses">
+                <h2 class="title-tecnologias">Intereses tecnológicos</h2>
+                <div class="barra">
+                    <div class="barra-items">
+                    <p class="barra-js">React</p>
+                    <div class="barra-skill barra-skill--80"></div>
+                </div>
+                <div class="barra">
+                    <div class="barra-items">
+                    <p class="barra-js">Node Js</p>
+                    <div class="barra-skill barra-skill--90"></div>
+                </div>
+                <div class="barra">
+                    <div class="barra-items">
+                    <p class="barra-js">Apps moviles</p>
+                    <div class="barra-skill barra-skill--50"></div>
+                </div>
+                <div class="barra">
+                    <div class="barra-items">
+                    <p class="barra-js">Javascript</p>
+                    <div class="barra-skill barra-skill--50"></div>
+                </div>
+                <div class="barra">
+                    <div class="barra-items">
+                    <p class="barra-js">Bases de datos</p>
+                    <div class="barra-skill barra-skill--50"></div>
+                </div>
+                <div class="barra">
+                    <div class="barra-items">
+                    <p class="barra-js">MongoDb</p>
+                    <div class="barra-skill barra-skill--50"></div>
+                </div>
+                <div class="barra">
+                    <div class="barra-items">
+                    <p class="barra-js">cyberseguridad</p>
+                    <div class="barra-skill barra-skill--50"></div>
+                </div>
+                <div class="barra">
+                    <div class="barra-items">
+                    <p class="barra-js">MySql</p>
+                    <div class="barra-skill barra-skill--50"></div>
+                </div>
+            </article>
+            <nav class="caja-contacto">
+                <h2>Contacto</h2>
+                <ul>
+                <a href="#" class="email">Email: programmerslowgravity@gmail.com</a>
+                <a href="#" class="number">Number phone: 3122119055</a>
+                <a href="#" class="ubication">Ubication: Candelaria</a>
+                <a href="#" class="github" target="_blank"
+                href="https://github.com/programmergravity?tab=repositories"
+                >My workspace Github</a>
+                <a href="#" class="linkedin" target="_blank"
+                href="https://www.linkedin.com/in/kevin-bola%C3%B1os-05b881272/"
+                >My personal Linkedln</a>
+                </ul>
+            </nav>
+        </section>
+        <section class="seccion-derecha">
+            <div class="header">
+            <p class="title">Kevin Andres Bolaños Narvaez</p>
+            <p class="title2">Desarrollador web</p>
+            </div>
+            <aside class="caja-sobremi">
+                <h2>Acerca de mi</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dignissimos in aspernatur necessitatibus veritatis error quibusdam sapiente at rem vero harum corporis consequatur nobis commodi excepturi voluptatum ex dicta exercitationem fuga, soluta, nisi suscipit? Corrupti?</p>
+            </aside>
+            <aside>
+                <h2>Educacion</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae repudiandae laboriosam aperiam tempora! Ad itaque labore quibusdam eum maiores quo recusandae rem totam saepe magnam quisquam impedit mollitia, eius deleniti.</p>
+            </aside>
+            <aside class="caja-laboral">
+                <h2>Experiencia laboral</h2>
+                <p>No tengo experiencia como programador web, tengo experiencia en otras areas laborales, pero actualmente en el mundo de la tecnologia me encuentro en un proceso de formación educativo, por medio de la entidad "Protalento" y "Ada school" para que me den los conocimientos adecuados para salir al mercado laboral como un excelente desarrollador web, incursionandome en el mundo de la tecnología.
+                Con esto planeo ganar experiencia en el camino y todo el proceso recibido de la formacion, y crecer día a día en este mundo cada dias mas tecnológico</p>
+            </aside>
+        </section>
 </body>
 </html>

@@ -1,0 +1,157 @@
+html{
+    --s: 50px;
+    --c: #191b22;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #0000 66%,#20222a 68% 70%,#0000 72%;
+    background: 
+        radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+        radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+        radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+        radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+        repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+        radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+    background-attachment: fixed;
+    }
+
+:root{
+    --primary-color: rgb(0, 0, 0);
+    --skills-bar-length: 0%;
+}
+.padre-flex{
+    border: 2px red solid;
+    line-height: 1.5;
+    margin: 5% auto;
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    }
+    
+/* Informacion izquierda */
+    
+    .seccion-izquierda{
+        background: linear-gradient(rgba(43, 43, 43, 0.945), rgb(122, 122, 117), rgb(134, 128, 79));
+        max-width: 50%;
+        margin: 1%;
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+    }
+        .photo-profile{
+            margin-top: 15%;
+            width: 100%;
+            border-bottom: 5px solid;
+        }
+        img{
+        border-radius: 40%;
+        width: 90%;
+        }
+
+/* estilos generales habilidades*/
+
+        h2{
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+            color: #ffffff;
+        }
+
+/*creando skills habilidades*/
+
+        .barra{
+            padding: 1em auto;
+            border-bottom: 1px solid;
+        }
+        .barra-header{
+            display: flex;
+            justify-content: space-between;
+            width: 175px;
+            margin-left: auto;
+        }
+        .skills-start-level{
+            padding: 8px;
+        }
+        .barra-js{
+            margin: 0;
+            font-size: 0.8rem;
+            color: #ffffff;
+        }
+        .barra-items{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.5em;
+        }
+        .barra-skill,
+        .barra-skill::after{
+            position: relative;
+            width: 175px;
+            height: 8px;
+            background-color: #888;
+            border-radius: var(border-radius);
+            overflow: hidden;
+        }
+        .barra-skill::after{
+            content: "";
+            position: absolute;
+            left: -175px;
+            background-color: var(--primary-color);
+            transition: var(--transition);
+            animation: skill-bar-fill 2s ease-in-out forwards;
+        }
+        .barra-skill--10::after{
+            --skills-bar-length: 10%
+        }
+        .barra-skill--20::after{
+            --skills-bar-length: 20%
+        }
+        .barra-skill--30::after{
+            --skills-bar-length: 30%
+        }
+        .barra-skill--40::after{
+            --skills-bar-length: 40%
+        }
+        .barra-skill--50::after{
+            --skills-bar-length: 50%
+        }
+        .barra-skill--60::after{
+            --skills-bar-length: 60%
+        }
+        .barra-skill--70::after{
+            --skills-bar-length: 70%
+        }
+        .barra-skill--80::after{
+            --skills-bar-length: 80%
+        }
+        .barra-skill--90::after{
+            --skills-bar-length: 90%
+        }
+
+        @keyframes skill-bar-fill {
+            to{
+               transform: translateX(var(--skills-bar-length)); 
+            }
+        }
+
+
+    
+/* Informacion derecha */
+    .header{
+        background: rgb(218, 215, 42);
+        
+    }
+    .title{
+        font-size: 3em;
+    }
+    .title2{
+        font-size: 2em;
+    }
+
+    .seccion-derecha{
+        background: linear-gradient(rgba(80, 80, 80, 0.945), rgb(106, 107, 96), rgb(119, 115, 83));
+        margin: 1%;
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+    }
