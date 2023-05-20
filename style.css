@@ -21,51 +21,69 @@ html{
 }
 
 
-.padre-flex{
-    border: 2px red solid;
+#main-flex{
     line-height: 1.5;
     margin: 5% auto;
-    max-width: 80%;
+    width: 70%;
     display: flex;
-    flex-direction: row;
     }
-    
-/* Informacion izquierda */
-    
-    .seccion-izquierda{
-        background: linear-gradient(rgba(43, 43, 43, 0.945), rgb(122, 122, 117), rgb(134, 128, 79));
-        max-width: 40%;
-        margin: 1%;
-        padding: 1%;
+
+    .container{
+        border: 1px solid red;
         display: flex;
         flex-direction: column;
     }
-        .photo-profile{
-            margin-top: 10%;
-            width: 100%;
-            border-bottom: 5px solid white;
-        
-        }
-        img{
-        border-radius: 40%;
-        width: 90%;
-        }
+    .container-sections{
+        display: flex;
+    }
 
-/* estilos generales habilidades*/
+    /* estilos generales*/
 
-        h2{
+        .titles{
             font-family: 'Orbitron', sans-serif;
             text-align: center;
+            background: rgb(180, 169, 9);
             color: #ffffff;
-            border-style: solid;
-            border-color: rgb(180, 169, 9);
+            margin: 0;
+            padding: 5px;
+        }
+    
+/* Informacion lado izquierdo */
+    
+    .seccion-izquierda{
+        background: linear-gradient(rgba(43, 43, 43, 0.945), rgb(122, 122, 117), rgb(134, 128, 79));
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .photo-profile{
+        background: #20222a;
+            margin: 0;
+            width: auto auto;
+    }
+    img{
+        display: flex;
+        margin-left:25px;     
+        width: 300px;
+        height: 440px;
+    }
+
+    .caja-habilidades{
+        padding: 10px;
+    }
+        .caja-habilidades small{
+            font-size: 1.5em;
         }
 
-/*creando skills habilidades*/
+    .caja-intereses{
+        padding: 10px;
+    }
+
+/*creando barass skills habilidades e intereses tecnologicos*/
 
         .barra{
             padding: 1em auto;
-            border-bottom: 1px solid white;
+            margin: 1.1em auto;
         }
         .barra-header{
             display: flex;
@@ -78,7 +96,8 @@ html{
         }
         .barra-js{
             margin: 0;
-            font-size: 0.8rem;
+            padding-right: 6px;
+            font-size: 1rem;
             color: #ffffff;
         }
         .barra-items{
@@ -138,45 +157,74 @@ html{
             }
         }
 
+/* Informacion lado derecho */
 
-    
-/* Informacion derecha */
-    .header{
+    .header-title{
         background: rgba(165, 158, 58, 0.664);
-        margin: 0;
+        margin-top: o;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
-    .title{
-        font-size: 3em;
+    #titulo-principal{
+        font-size: 2.5em;
+        font-family: 'Orbitron', sans-serif;
+        font-family: 'Righteous', cursive;
     }
-    .title2{
-        font-size: 2em;
+    #titulo-secundario{
+        background: yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 40px;
+        width: 280px;
     }
+        #titulo-secundario p{
+            font-size: 1.5rem; 
+        }
 
     .seccion-derecha{
         background: linear-gradient(rgba(80, 80, 80, 0.945), rgb(106, 107, 96), rgb(119, 115, 83));
-        max-width: 65%;
-        margin: 1%;
-        padding: 1%;
+        width: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         text-align: center;
+        }
+
+
+        
+/* Footer contacto */
+
+    .footer-contacto{
+        background: linear-gradient(rgba(80, 80, 80, 0.945), rgb(106, 107, 96), rgb(119, 115, 83));
+        width: auto;
+        height: 150px;
+        margin: 0;
+        display: flex;
+        flex-direction:column;
         
     }
-
-
-    /* editando el contacto */
-    .footer{
-        margin: 1%;
-        padding: 1%;
-        display: flex;
-        align-self: flex-end;
-    }
-        .caja-contacto{
-            border: solid rgb(255, 0, 0);
-            margin: 1%;
-            padding: 1%;
+        #links{
+            width: auto;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            flex-flow: row wrap;
             justify-content: center;
-            text-align: center;
-            
-    }
+            justify-content: space-around;
+        }
+            #links a:hover{
+                color: rgb(180, 169, 9);
+            }
+            #links i{
+                padding-right: 15px;
+            }
+
+            #links a{
+                color:rgb(0, 0, 0);
+                font-size: 1.6em;
+                text-decoration: none;
+                padding-right: 30px;
+            }
