@@ -44,14 +44,39 @@ html{
             text-align: center;
             background: rgb(180, 169, 9);
             color: #ffffff;
-            margin: 0;
+            margin-top: 5px;
             padding: 5px;
         }
+        .box-sobremi p{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #ffffff;
+            text-align: left;
+            font-size: 1.1rem;
+        }
+        .box-educacion h3{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:#b4a622e0;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+        .box-educacion p{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #ffffff;
+            text-align: left;
+            font-size: 1.1rem;
+        }
+        .box-laboral p{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #ffffff;
+            text-align: left;
+            font-size: 1.1rem;
+        }
+
     
 /* Informacion lado izquierdo */
     
     .seccion-izquierda{
-        background: linear-gradient(rgba(43, 43, 43, 0.945), rgb(122, 122, 117), rgb(134, 128, 79));
+        background: linear-gradient(rgba(54, 53, 53, 0.856), rgba(73, 73, 70, 0.884), rgb(165, 149, 79));
         width: auto;
         display: flex;
         flex-direction: column;
@@ -73,6 +98,7 @@ html{
     }
         .caja-habilidades small{
             font-size: 1.5em;
+            color: #ffffff;
         }
 
     .caja-intereses{
@@ -93,6 +119,7 @@ html{
         }
         .skills-start-level{
             padding: 8px;
+            color: #ffffff;
         }
         .barra-js{
             margin: 0;
@@ -160,7 +187,7 @@ html{
 /* Informacion lado derecho */
 
     .header-title{
-        background: rgba(165, 158, 58, 0.664);
+        background: rgb(194, 182, 10);
         margin-top: o;
         height: 100px;
         display: flex;
@@ -173,43 +200,57 @@ html{
         font-family: 'Righteous', cursive;
     }
     #titulo-secundario{
-        background: yellow;
+        background: rgba(197, 185, 20, 0.541);
+        margin-top: 5px;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 40px;
-        width: 280px;
+        align-items: center;
+        width: auto;
+        height: 50px;
     }
         #titulo-secundario p{
-            font-size: 1.5rem; 
+            color: #ffffff;
+            font-size: 1.7rem;
+            font-family: 'Orbitron', sans-serif;
+            font-family: 'Righteous', cursive;
         }
 
     .seccion-derecha{
-        background: linear-gradient(rgba(80, 80, 80, 0.945), rgb(106, 107, 96), rgb(119, 115, 83));
+        background: linear-gradient(rgba(54, 53, 53, 0.856), rgba(87, 87, 79, 0.884), rgb(165, 149, 79));
         width: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         text-align: center;
-        }
+    }
+    .box-sobremi{
+        padding: 10px;
+        margin-top: -15px;
+    }
+    .box-educacion{
+        padding: 10px;
+        margin-top: -15px;
+    }
+    .box-laboral{
+        padding: 10px;
+        margin-top: -15px;
+    }
 
 
         
 /* Footer contacto */
 
     .footer-contacto{
-        background: linear-gradient(rgba(80, 80, 80, 0.945), rgb(106, 107, 96), rgb(119, 115, 83));
+        background: rgb(165, 149, 79);
         width: auto;
         height: 150px;
         margin: 0;
         display: flex;
         flex-direction:column;
-        
     }
         #links{
             width: auto;
-            margin: 0;
-            padding: 10px;
+            margin-top: -15px;
+            padding: 5px;
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
